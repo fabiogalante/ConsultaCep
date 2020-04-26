@@ -6,11 +6,13 @@
              mc:Ignorable="d"
              x:Class="ConsultaCep.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30">
+        <Image Source="Logo.png" x:Name="Logo"/>
+        <Entry Placeholder="Digite o cep" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF" x:Name="Cep"/>
+        <Button Text="BUSCAR CEP" TextColor="#FFFFFF" BackgroundColor="#00416B" x:Name="BotaoBuscarCep"/>
+        <Label Text="" x:Name="Result" VerticalOptions="Center"  HorizontalOptions="Center" />
     </StackLayout>
 
 </ContentPage>
+
+
